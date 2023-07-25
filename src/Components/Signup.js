@@ -1,27 +1,33 @@
-import React from 'react'
+import React from 'react';
+import './Signup.js';
 
 const Signup = () => {
   return (
-    <div>
-        <div>
-            <form>
-                <h2 className="text-center">SignUp</h2>
-                <div>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" placeholder="Enter your email" name="Email" className="form-control"></input>
-                </div>
-            </form>
-        </div>
-        <br></br>
-        <div>
-                <h2 className="text-center"></h2>
-                <div>
-                    <label htmlFor="password">Password</label>
-                    <input type="password" placeholder="Enter your password" name="Password" className="form-control"></input>
-                </div>
-        </div>
+    <div className='d-flex justify-content-center bg-danger-subtle align-items-center vh-100'>
+      <div className='border border-3 border-dark p-4 bg-dark-subtle'>
+        <form>
+          <h2 className="text-center">Sign Up</h2>
+          <div>
+            <label htmlFor="email">Email</label>
+            <input type="email" placeholder="Enter your email" name="email" className="form-control" />
+          </div>
+          <div>
+            <label htmlFor="password">Password</label>
+            <input type="password" placeholder="Enter your password" name="password" className="form-control" />
+          </div>
+          <div>
+            <label htmlFor="confirmPassword">Confirm Password</label>
+            <input type="password" placeholder="Confirm your password" name="confirmPassword" className="form-control" />
+          </div>
+          <div className='m-3 d-grid'>
+            <button className='btn btn-danger' type='submit'>
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Signup
+export default Signup;

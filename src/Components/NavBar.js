@@ -17,8 +17,8 @@ const NavBar = () => {
                         <Link class="nav-link" to={"/about"}>About</Link>
                     </li>
                 </ul>
-                <Link className='btn btn-dark text-dark mx-1' to="/login">Login</Link>
-                <Link className='btn btn-dark text-dark mx-1' to="/signup">SignUp</Link>
+                <Link className='btn btn-dark mx-1' to="/login">Login</Link>
+                <Link className='btn btn-dark mx-1' to="/signup">SignUp</Link>
             </div>
         </nav>
     </>
